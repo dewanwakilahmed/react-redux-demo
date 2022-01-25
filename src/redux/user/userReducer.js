@@ -6,12 +6,12 @@ import {
 
 const initialState = {
   loading: true,
-  data: [],
+  users: [],
   error: "",
 };
 
 const reducer = (state = initialState, action) => {
-  switch (action.types) {
+  switch (action.type) {
     case FETCH_USERS_REQUEST:
       return {
         ...state,
